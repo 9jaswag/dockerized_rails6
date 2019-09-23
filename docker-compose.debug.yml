@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  dockerized_rails6:
+    image: dockerized_rails6
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
